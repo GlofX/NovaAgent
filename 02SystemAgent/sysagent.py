@@ -42,7 +42,7 @@ class SimpleAgent:
         # 开始循环，让 Agent 自己决定每一步要不要用工具、用哪个工具。
         for step in range(max_steps):
 
-            print(f"\n--- Step {step + 1} ---")
+            print(f"[Step {step + 1}] Action={action}, Params={action_input}")
 
             if len(self.history) > SimpleAgent.MAX_HISTORY:
                 # 保留 System Prompt 和最近 N 条
